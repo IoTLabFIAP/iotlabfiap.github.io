@@ -10,7 +10,7 @@ a:visited {
     color: black;
 }
 a:hover {
-    color: blue;
+    color: rgb(177, 137, 230);
 }
 a:active {
     color: blue;
@@ -146,12 +146,29 @@ a:active {
     <body class="yui3-skin-sam">
 
 
-        <div class="header yui3-u-1">
+                <style>
+        nav {
+           background-color: rgb(54, 45, 100);
+            overflow: hidden;
+        }
+            nav ul{
+}
+nav ul li {
+    /* This allow us to arrange list items in a row, without using float */
+    display: inline-block;
+    list-style-type: none;
+}
 
-            <h1 class="yui3-u-1">IoT Lab Fiap</h1>
-            <h2 class="yui3-u">Laboratório de Internet das Coisas - MBA FIAP</h2>
-
-        </div>
+/* Create a style for the first level items */
+nav > ul > li > a {
+    color: #aaa;
+    background-color:rgb(54, 45, 100);
+    display: block;
+    line-height: 2em;
+    padding: 0.5em 0.5em;
+    text-decoration: none;
+}
+        </style>
 
         <div class="content">
             <h2>Quem somos?</h2>
