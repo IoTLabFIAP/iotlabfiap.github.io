@@ -107,8 +107,8 @@
 
         <div class="header yui3-u-1">
 
-            <h1 class="yui3-u-1">Y.Tipsy &amp; Y.Popover</h1>
-            <h2 class="yui3-u">Contextual Tooltips and popovers</h2>
+            <h1 class="yui3-u-1">IoT Lab Fiap</h1>
+            <h2 class="yui3-u">Laboratório de Internet das Coisas - MBA FIAP</h2>
 
         </div>
         
@@ -119,32 +119,19 @@
         </div>
 
         <div class="content">
-            <h2>Getting Started</h2>
+            <h2>Instalando Arduino IDE</h2>
 
-            <p>You can get <code>Y.Tipsy</code> from the YUI Gallery.</p>
+            <p>Você pode obter a Arduino IDE em seu site oficial: <a href="http://arduino.cc">arduino.cc</a></p>
+            <object data="http://www.youtube.com/embed/W7qWa52k-nE" width="560" height="315"></object>
 
-            <pre><code data-language="javascript">
-    
-    YUI({
-        gallery: 'gallery-2013.03.27-22-06'
-    }).use('gallery-tipsy', function (Y) { 
-        //Y.Tipsy is loaded and good to go.
-    });
-            </code></pre>
-            
-            <p>Currently, you need to pull in the CSS file separately. Add this to your <code>head</code> to add the necessary styling:</p>
 
-            <pre><code data-language="css">
-    <!-- This will pull in the pointer from gallery-widget-pointer -->
-    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/gallery-2013.03.27-22-06/build/gallery-widget-pointer/assets/gallery-widget-pointer-core.css">
+            <h2>Instalando NodeMCU no Arduino IDE</h2>
 
-    <!-- This will pull in tipsy styles -->
-    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/gallery-2013.03.27-22-06/build/gallery-tipsy/assets/skins/sam/gallery-tipsy.css">
-            </code></pre>
+            <p>Para utilizar a Arduino IDE como ferramenta de desenvolvimento do NodeMCU, precisamos adicionar suporte para a mesma.</p>
 
-            <h2>Usage</h2>
+            <pre><code data-language="html"> http://arduino.esp8266.com/stable/package_esp8266com_index.json </code></pre>
+                      <object data="http://www.youtube.com/embed/W7qWa52k-nE" width="560" height="315"></object>
 
-            <p><code>Y.Tipsy</code> is a <code>Y.Widget</code> subclass that lets you easily create tooltips. Each instantiation renders a single tooltip and can support multiple HTML elements. For example, lets say you have this HTML:</p>
 
             <pre><code data-language="html">
     <a href="#" data-placement="above" rel="tipsy" data-content="Lorem Ipsum Dolor Sit Amet?">Hover to show tooltip</a>
@@ -153,14 +140,7 @@
 
             <p>You can set up a single <code>Y.Tipsy</code> instance to handle both of these:</p>
 
-            <pre><code data-language="javascript">
-                
-    var tipsy = new Y.Tipsy({
-        selector: "[rel='tipsy']"
-    });
 
-    tipsy.render();  
-            </code></pre>
 
 
             <h3>Pointing to a node</h3>
