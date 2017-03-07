@@ -1,0 +1,263 @@
+
+<!doctype html>
+<html>
+    <head>
+        <style>
+a:link {
+    color: gray;
+}
+a:visited {
+    color: rgb(177, 137, 230);
+}
+a:hover {
+    color: rgb(177, 137, 230);
+}
+a:active {
+    color: blue;
+}
+</style>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.9.0/build/cssnormalize/cssnormalize-min.css">
+        <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/gallery-2013.03.27-22-06/build/gallery-widget-pointer/assets/gallery-widget-pointer-core.css">
+        <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/gallery-2013.03.27-22-06/build/gallery-tipsy/assets/skins/sam/gallery-tipsy.css">
+        <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/gallery-2013.03.27-22-06/build/gallery-popover/assets/skins/sam/gallery-popover-skin.css">
+        <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.9.0/build/cssgrids-responsive/cssgrids-responsive-min.css">
+        <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.9.0/build/cssbutton/cssbutton-min.css">
+        <link rel="stylesheet" type="text/css" href="https://rawgithub.com/tilomitra/yuicss-common/master/ui.css">
+        <link rel="stylesheet" type="text/css" href="https://rawgithub.com/ccampbell/rainbow/master/themes/obsidian.css">
+        
+    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-UQiGfs9ICog+LwheBSRCt1o5cbyKIHbwjWscjemyBMT9YCUMZffs6UqUTd0hObXD" crossorigin="anonymous">
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-old-ie-min.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+        <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-min.css">
+    <!--<![endif]-->
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:200">
+    
+        <!--[if lte IE 8]>
+            <link rel="stylesheet" href="/combo/1.18.13?/css/main-grid-old-ie.css&/css/main-old-ie.css&/css/grids.css&/css/rainbow/baby-blue.css">
+        <![endif]-->
+        <!--[if gt IE 8]><!-->
+            <link rel="stylesheet" href="/combo/1.18.13?/css/main-grid.css&/css/main.css&/css/grids.css&/css/rainbow/baby-blue.css">
+        <!--<![endif]-->
+
+    <!--[if lt IE 9]>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script>
+    <![endif]-->
+        
+        <script type="text/javascript" src="//use.typekit.net/ajf8ggy.js"></script>
+        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+        <style>
+
+            #demoButtons {
+                text-align: center;
+            }
+
+            li {
+                margin-bottom:1.2em;
+            }
+            .header {
+                padding: 20px;
+                background: rgb(54, 45, 100);
+            }
+            .header h1 {
+                color: #fff;
+            }
+            .header h2 {
+                color: rgb(177, 137, 230);
+            }
+
+            .notice {
+                background: #61B842;
+                color: white !important;
+            }
+
+            #fork {
+                font-size:150%;
+            }
+
+            .yui3-button {
+                font-size: 80%;
+                padding: 0.8em 2.5em;
+            }
+
+            .l-centered {
+                text-align: center;
+            }
+
+            code {
+                font-family: Consolas, 'Liberation Mono', Courier, monospace;
+                -moz-border-radius: 3px;
+                -webkit-border-radius: 3px;
+                font-size: 0.8em;
+                border-radius: 3px;
+                border: none;
+                background: #f8f8f8;
+                padding: 0.4em 0.6em;
+            }
+
+            pre {
+                border-radius: 5px;
+            }
+            pre code {
+                font-size:1em;
+                background: none;
+            }
+            .content code {
+                white-space: pre;
+                line-height: normal;
+            }
+
+            .content h3 {
+                font-weight: bold;
+                color: #333;
+                margin-top: 2em;
+            }
+
+            .content .subtitle {
+                font-weight: 100;
+                font-size: 170%;
+            }
+
+            .centered {
+                text-align: center;
+            }
+
+            #popoverButton {
+                background: rgb(30, 66, 148);
+                color: rgb(121, 167, 248);
+                display: block;
+                font-size: 130%;
+            }
+        </style>
+        <style>
+                .img-circular{
+                 width: 200px;
+                 height: 200px;
+                border-radius:  50%;
+            }
+        </style>
+    </head>
+    
+<style>
+        nav {
+           background-color: rgb(54, 45, 100);
+            overflow: hidden;
+        }
+            nav ul{
+}
+nav ul li {
+    /* This allow us to arrange list items in a row, without using float */
+    display: inline-block;
+    list-style-type: none;
+}
+
+/* Create a style for the first level items */
+nav > ul > li > a {
+    color: #aaa;
+    background-color:rgb(54, 45, 100);
+    display: block;
+    line-height: 2em;
+    padding: 0.5em 0.5em;
+    text-decoration: none;
+}
+        </style>
+    
+    <body class="yui3-skin-sam">
+
+
+        <div class="header yui3-u-1">
+
+            <h1 class="yui3-u-1">IoT Lab Fiap</h1>
+            <h2 class="yui3-u">Laboratório de Internet das Coisas - MBA FIAP</h2>
+
+       
+        
+
+       <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="fotos.html">Fotos</a></li>
+        </ul>
+    </nav>
+             </div>
+
+        <div class="content">
+                     
+   <h2> 1) Agro - Desafio IoT </h2>
+<p>
+Uma cooperativa de agricultores está enfrentando problemas quanto a performance da safra de soja no interior do Paraná. Eles possuem smartphones como ferramenta para uso no campo e os índices de luminosidade e pluviométrico (chuva e luminosidade) são essenciais para tomada de decisão. Além disso, o gestor da cooperativa precisa destas informações como relatório para poder negociar com os bancos de crédito rural o risco de crédito com os produtores.  
+
+Para chuva , considerar choveu ou não (modo digital) 
+Para luminosidade, considerar a quantidade de LUX
+
+<a href="http://www.nadielcomercio.com.br/blog/2015/09/09/medicao-da-luz-com-um-arduino-e-ldr/">Como converter o valor do sensor em LUX:</a>
+
+</p>
+
+
+<h2>2) Casa conectada - Desafio IoT</h2>
+<p>
+Você é uma startup que decidiu empreender na área de casa conectada (smart home) e através de ter rodado alguns pivots , observou que a área de segurança é um negócio interessante e atrativo. Sua solução possui sensores de presença e de ruído que são capazes de detectar se existem pessoas em áreas da casa para assim evitar roubos e onde a solução de câmera é muito cara. Os seus usuários desejam ser alertados pelo celular e em qual ambiente há risco de intrusos. Além disso o serviço que a sua startup deve oferecer, conta com uma central de segurança que via analytics (com dashboard feito pela sua startup) consegue mapear quais bairros sofrem mais com esse tipo de problema para poder alocar a frota de profissionais de rua de maneira dinâmica e eficiente.
+</p>
+
+<h2>3) Carro conectado Desafio IoT</h2>
+<p>
+Você está desenvolvimento um acessório para o carro conectado , de maneira a ajudar os usuários quanto a estacionar melhor o veículo. Esse sistema possui um sensor ultra sônico localizado na parte traseira do carro para evitar a colisão com outro veículo estacionado. Além do sensor este sistema é dotado de uma sinalização através de 3 Leds nas seguintes cores : verde (distância maior que 1 metro) , amarelo (distância entre 90cm a 50 cm) e vermelho (menor que 50cm) . Este sistema visa ser uma aplicativo que irá pontuar os melhores motorista atribuindo uma nota baseado no comportamento do usuário durante o estacionamento. 
+</p>
+<h2>4) Smart Cities - Desafio IoT</h2>
+<p>
+A prefeitura de São Paulo está com um projeto de smart cities com foco em 2 problemas: 1) mapear a poluição sonora produzido pelo trânsito e 2) informar a população o nível de temperatura e umidade das regiões da cidade para alertar quanto as pancadas de chuvas isoladas que causam transtornos para a população. Além do app que deverá ser disponibilizado para a população, deverá ser oferecido para a defesa civil um dashboard para que os gestores sejam capazes de tomar decisões e análises quanto aos principais pontos de risco da cidade (quanto a chuva).
+</p>
+<p>Para fins de análise, o ruído será calculado com a seguinte fórmula: 
+double db = 16.801 * log (sensorValue/1023) + 9.872;</p>
+
+<h2>5) Varejo - Desafio IoT</h2>
+<p>
+Você foi contactado por uma grande rede de varejo (supermercado) que está com grandes problemas de reposição de produtos nas gôndolas de supermercado. Por diversas vezes, o cliente não encontra o produto na prateleira e assim o supermercado perde a venda para um concorrente. O tempo de reposição é longo e manual além do espaço ser muito grande para ter diversas pessoas fiscalizando as prateleiras o que ainda implica em um custo de pessoal maior. O seu desafio é controlar em tempo real o nível de ruptura de produto nas gôndolas em tempo real , onde através de um app, um funcionário saberá exatamente quando e onde repor o produto. Ao mesmo tempo , os fabricantes dos produtos tem interesse em saber em tempo real o nível de ruptura em cada ponto de venda através de um dashboard via web.
+</p><p>
+Considerar uma gôndola de 30cmx20cm
+</p>
+<h2>6) Supply chain - Desafio IoT</h2>
+<p>
+A área de negócios da empresa que você trabalha (uma grande multinacional de logística) está perdendo dinheiro com o rastreio de produtos e paletes que são transportados em caminhões da sua frota. A solução alinhada com o usuário é o uso de uma app que faça um check dentro do caminhão quando o mesmo for abastecido e uma interface web que apresente em tempo real o status das cargas que estão transportadas por todo o país. Assim , os gestores podem ser capazes de entender quais os centros de distribuição apresentam melhor e pior performance para que isso possa alimentar o planejamento da cadeia .
+</p>
+<h2>7) Chat Bot - Desafio IoT</h2>
+<p>
+Com a popularização dos Bots e o Messenger do Facebook como um dos precursores desta tecnologia, você e sua equipe definiram que a próxima geração da internet das Coisas é ser mais social, usando interfaces como o Messenger para interagir com objetos tais como a cafeteira, lâmpadas, geladeiras etc. Para provar que faz sentido a visão de vocês, vocês foram convidados para apresentar um protótipo que usando o messenger do facebook , você são capazes de interagir com um um objeto ( no caso uma lâmpada) que não possui conectividade nativa com a internet.  A aplicação web deverá armazenar o status dos objetos para futuras análises quanto ao comportamento do usuário em casa.
+</p>
+<h2> 8) E-Health -Desafio IoT </h2>
+<p>
+A área de marketing de uma indústria farmacêutica enfrenta hoje um grande problema de mercado: A adesão à medicamentos para doenças crônicas. Para algumas doenças crônicas, é necessário saber a quantidade de batimentos cardíacos antes de tomar a medicação .O paciente muitas vezes se esquece de tomar o medicamento na hora certa e isso reduz o efeito da droga o que consequentemente aumenta as chances de agravar o quadro clínico do paciente. Além disso é necessário que seja coletado a quantidade de batimentos cardíacos do paciente. A empresa de soluções de e-health que você trabalha foi contratada para resolver esse cenário e terá que criar uma solução que seja capaz alertar o paciente que está na hora de tomar o medicamento e coletar os seus respectivos batimentos, além de disponibilizar para o médico que acompanha o paciente um dashboard com o analytics do comportamento de adesão ao tratamento prescrito. Além disso, um webapp deve ser disponibilizado para que alguém da família possa acompanhar se o paciente está tomando o medicamento e caso contrário poderá entrar em contato e lembrá-lo.
+</p>         
+            
+            
+            
+<!-- 
+<iframe align="center" src="http://flickrslidr.com/slideshow/view.php?g=ZHkeek" frameBorder="0" width="500" height="500" scrolling="no"></iframe><br/><small>Created with <a href="http://www.admarket.se" title="Admarket.se">Admarket's</a> <a href="http://flickrslidr.com" title="flickrSLiDR">flickrSLiDR</a>.</small>        
+         -->
+        </div>
+        <script src="https://rawgithub.com/ccampbell/rainbow/master/js/rainbow.min.js"></script>
+        <script src="https://rawgithub.com/ccampbell/rainbow/master/js/language/html.js"></script>
+        <script src="https://rawgithub.com/ccampbell/rainbow/master/js/language/css.js"></script>
+        <script src="https://rawgithub.com/ccampbell/rainbow/master/js/language/generic.js"></script>
+  
+             <div class="header yui3-u-1">
+      <p>Entre em contato <a href="http://ezefranca.com">clicando aqui</a></p>
+      <p><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+      <img alt="Licença Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br/>
+       <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">IoT Lab Fiap</span> está licenciado com uma Licença <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Atribuição-CompartilhaIgual 4.0 Internacional</a>
+         </p>
+        <span class="yui3-u">Página hospedada no <a href="https://pages.github.com">GitHub Pages</a> utilizando <a href="https://github.com/tilomitra/prettypages/">Pretty Pages</a> de <a href=https://github.com/tilomitra>Tilo</a>.</span>
+        </div>
+    <script src="https://purecss.io/combo/1.18.13?/js/ui.js&/js/rainbow/rainbow.min.js&/js/rainbow/language/generic.js&/js/rainbow/language/html.js&/js/rainbow/language/css.js&/js/rainbow/language/javascript.js&/js/rainbow/language/shell.js"></script>
+        
+            </body>
+    
+        </html>
